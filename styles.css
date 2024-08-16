@@ -1,0 +1,96 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar, .footer {
+    background-color: #111;
+}
+
+.navbar-brand {
+    color: #f90 !important;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.user-profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #f90;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #222;
+    border: 1px solid #444;
+}
+
+.col-custom {
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+.card-title, .card-text {
+    color: #f90;
+}
+
+.footer {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.categories {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.category {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #444;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.category:hover {
+    background-color: #555;
+}
+.line {
+    display: flex;
+    justify-content: center;
+    border: 0cap;
+    filter: blur(10px);
+   
+
+}
+
+.overlay {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    
+    border-radius: 10;
+    color: #fff; 
+    padding: 10px 20px; 
+    font-size: 100px; 
+    text-align: center;
+}
+
