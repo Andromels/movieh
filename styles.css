@@ -60,7 +60,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 50vh; /* Adjust for the height of the dashboard */
+    height: 50vh;
     position: relative;
     text-align: center;
     color: white;
@@ -111,6 +111,7 @@ body {
     width: 200px;
     text-align: center;
     color: white;
+    cursor: pointer;
 }
 
 .movie-card img {
@@ -121,4 +122,68 @@ body {
 .movie-card h3 {
     margin: 10px 0;
     font-size: 18px;
+}
+
+/* Modal Section */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+    color: white;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #e50914;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.modal-poster {
+    width: 150px;
+    border-radius: 10px;
+}
+
+.modal-details {
+    flex: 1;
+}
+
+.trailer-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.trailer-container iframe {
+    width: 100%;
+    height: 315px;
+    border-radius: 10px;
 }
