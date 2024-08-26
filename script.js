@@ -1,4 +1,4 @@
-const API_KEY = '361accd1456703005807d09acf1e92fe'; // Replace with your TMDb API key
+const API_KEY = '361accd1456703005807d09acf1e92fe'; 
 const BASE_URL = 'https://api.themoviedb.org/3';
 const IMG_URL = 'https://image.tmdb.org/t/p/w500';
 const BACKDROP_IMG_URL = 'https://image.tmdb.org/t/p/original';
@@ -18,7 +18,7 @@ function fetchPopularMovies() {
         .catch(error => console.error('Error fetching data:', error));
 }
 
-// Set background image for dashboard
+// background image for dashboard
 function setBackground(movies) {
     const movieBackground = document.getElementById('movie-background');
     if (movies.length > 0) {
@@ -30,7 +30,7 @@ function setBackground(movies) {
     }
 }
 
-// Display movies in the dashboard
+// Display movies dashboard
 function displayMovies(movies) {
     const moviesSection = document.getElementById('movies-section');
     moviesSection.innerHTML = ''; // Clear previous results
