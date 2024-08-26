@@ -4,155 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEPPY</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#">NEPPY</a>
-        <div class="ml-auto">
-            <img src="https://s.rfi.fr/media/display/3779f17e-1088-11ea-9925-005056a99247/w:1280/p:1x1/2012-11-15T210546Z_960850956_GM1E8BG0DQU01_RTRMADP_3_FRANCE-GAYMARRIAGE.JPG" alt="User Profile" class="user-profile">
+    <nav class="navbar">
+        <div class="logo">NEPPY</div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for movies...">
+            <button onclick="searchMovies()">Search</button>
+        </div>
+        <div class="profile">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-img">
         </div>
     </nav>
-    
-    
 
-    <div class="line">
-        <img src="https://s.rfi.fr/media/display/3779f17e-1088-11ea-9925-005056a99247/w:1280/p:1x1/2012-11-15T210546Z_960850956_GM1E8BG0DQU01_RTRMADP_3_FRANCE-GAYMARRIAGE.JPG" alt="linebar" class="linebar">
-        <div class= "overlay">
-            <h1>LOVE OF US</h1> 
-        </div>      
-    </div>
-    
+    <section class="movies-section" id="movies-section">
+        <!-- Movies will be dynamically loaded here -->
+    </section>
 
-
-    <div class="container">
-        <div class="row">
-           
-            <div class="col-custom">
-                <div class="card">
-                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202402/silambarasan-025210216-1x1.jpg?VersionId=HoCrTXVB9njKJNejYyOJFj3Rbr.YyQUM" class="card-img-top" alt="Movie Poster 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Kamal Haasan</h5>
-                        <p class="card-text">Si nithan man gud kay biot</p>
-                        <a href="#" class="btn btn-warning">More Info</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-custom">
-                <div class="card">
-                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202402/yami-gautam--priyamanis-article-370-box-office-collection-day-6-291611590-1x1.jpg?VersionId=.wKzrQnYGyPDttSHw6YKibBPzC0kTPP8" class="card-img-top" alt="Movie Poster 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Article 370</h5>
-                        <p class="card-text">Si nithan man jud ang problema sa tanan</p>
-                        <a href="#" class="btn btn-warning">More Info</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-custom">
-                <div class="card">
-                    <img src="https://images.squarespace-cdn.com/content/v1/5e0f737063ea1f7339a4fb84/1689972581372-E9Q9IBECTUWA5TK4ZYQ5/waterbrother+1x1.jpg" class="card-img-top" alt="Movie Poster 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Water Brother</h5>
-                        <p class="card-text">Si nithan kay kalibangon atong isang adlaw.</p>
-                        <a href="#" class="btn btn-warning">More Info</a>
-                    </div>
-                </div>
-            </div>
-           
-            <div class="col-custom">
-                <div class="card">
-                    <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/action-movie-poster-template-design-bb760aa0d73eac3815eedd3e7a35abf7.jpg?ts=1622193309" class="card-img-top" alt="Movie Poster 4">
-                    <div class="card-body">
-                        <h5 class="card-title">I Am Legend</h5>
-                        <p class="card-text">Kaganiha kay ga story si nithan.</p>
-                        <a href="#" class="btn btn-warning">More Info</a>
-                    </div>
-                </div>
-            </div>
-           
-            <div class="col-custom">
-                <div class="card">
-                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202310/shiva-rajkumars-ghost-review-out-193552930-1x1.jpeg?VersionId=df9UxIMrmyIXb16Q.t3bTcxXyrJ_tUwR" class="card-img-top" alt="Movie Poster 5">
-                    <div class="card-body">
-                        <h5 class="card-title">Ghost</h5>
-                        <p class="card-text">Naa daw ga sunod2 niya tas otowg daw iya ow 10.</p>
-                        <a href="#" class="btn btn-warning">More Info</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-           
-            <div class="col-custom">
-                <div class="card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_DA-XqT_vnnGp6YP6I1HNmDo5TmVVh0vv4g&s" class="card-img-top" alt="Movie Poster 6">
-                    <div class="card-body">
-                        <h5 class="card-title">Serious Men</h5>
-                        <p class="card-text">Taga tominobo daw to sya tas silingan radaw sila.</p>
-                        <a href="#" class="btn btn-warning">More Info</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-custom">
-                <div class="card">
-                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202401/prithviraj-sukumaran-the-goat-life-101457628-1x1.jpg?VersionId=ENYYCyT0bpk.8xAHd0AqOvzM0eNRIkHW" class="card-img-top" alt="Movie Poster 7">
-                    <div class="card-body">
-                        <h5 class="card-title">Goatlife</h5>
-                        <p class="card-text">Nawala gud ang smiley face ni nathan.</p>
-                        <a href="#" class="btn btn-warning">More Info</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-custom">
-                <div class="card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1vudLv1vi9baWATxfQjjlrJt_Q_aKxDWueA&s" class="card-img-top" alt="Movie Poster 8">
-                    <div class="card-body">
-                        <h5 class="card-title">The Rolling Ball</h5>
-                        <p class="card-text">Na sad na hinoon sya kay gi shagit iya name.</p>
-                        <a href="#" class="btn btn-warning">More Info</a>
-                    </div>
-                </div>
-            </div>
-          
-            <div class="col-custom">
-                <div class="card">
-                    <img src="https://i.ibb.co/4jk0Xw8/rajinikanth-lal-salaam-052051331-1x1.webp" class="card-img-top" alt="Movie Poster 9">
-                    <div class="card-body">
-                        <h5 class="card-title">Lal Salaam</h5>
-                        <p class="card-text">Dili na daw sya mo share ug story time.</p>
-                        <a href="#" class="btn btn-warning">More Info</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-custom">
-                <div class="card">
-                    <img src="https://i0.wp.com/kristinsterk.com/wp-content/uploads/2023/10/AD-1x1-Keyart-final.jpg?fit=2160%2C2160&ssl=1" class="card-img-top" alt="Movie Poster 10">
-                    <div class="card-body">
-                        <h5 class="card-title">After Death</h5>
-                        <p class="card-text">Si nithan dayon kay na depress na huhu.</p>
-                        <a href="#" class="btn btn-warning">More Info</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-    <footer class="footer">
-        <p>&copy; 2024 NEPPY</p>
-    </footer>
-
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

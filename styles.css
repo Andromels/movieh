@@ -1,96 +1,82 @@
 body {
-    background-color: #000;
-    color: #fff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
 }
 
-.navbar, .footer {
-    background-color: #111;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #222;
 }
 
-.navbar-brand {
-    color: #f90 !important;
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e50914;
+}
+
+.search-bar {
     display: flex;
     align-items: center;
 }
 
-.navbar-logo {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
+.search-bar input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
 }
 
-.user-profile {
+.search-bar button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 2px solid #f90;
+    border: 2px solid #e50914;
 }
 
-.container {
-    margin-top: 20px;
-}
-
-.row {
+.movies-section {
     display: flex;
     flex-wrap: wrap;
-}
-
-.card {
-    background-color: #222;
-    border: 1px solid #444;
-}
-
-.col-custom {
-    flex: 0 0 20%;
-    max-width: 20%;
-}
-
-.card-title, .card-text {
-    color: #f90;
-}
-
-.footer {
-    padding: 10px 0;
-    text-align: center;
-}
-
-.categories {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.category {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 0 5px;
-    background-color: #444;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.category:hover {
-    background-color: #555;
-}
-.line {
-    display: flex;
+    gap: 20px;
+    padding: 20px;
     justify-content: center;
-    border: 0cap;
-    filter: blur(10px);
-   
-
 }
 
-.overlay {
-    position: absolute;
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    
-    border-radius: 10;
-    color: #fff; 
-    padding: 10px 20px; 
-    font-size: 100px; 
+.movie-card {
+    background-color: #222;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
     text-align: center;
+    color: white;
 }
 
+.movie-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.movie-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
