@@ -27,8 +27,7 @@ function fetchAndDisplayUsers() {
  })
     .catch(error => {
         console.error('Error fetching user data:', error);
-        userContainer.innerHTML = '<p style="color:red;">Failed to fetch user data. Please try
-again later.</p>';
+        userContainer.innerHTML = '<p style="color:red;">Failed to fetch user data. Please try again later.</p>';
     });
 }
 // Attach the click event to the button
